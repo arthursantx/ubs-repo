@@ -1,0 +1,69 @@
+/* Estilo do formulário */
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inputs e selects dentro das divs */
+  .form-floating {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-floating label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  /* Botão */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Títulos e texto centralizado */
+  .text-center {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  /* Input com borda arredondada */
+  input.form-control, select.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 12px;
+  }
+  
+  input.form-control:focus, select.form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Layout responsivo - Ajustes para dispositivos menores */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 15px;
+    }
+    button[type="submit"] {
+      font-size: 1rem;
+    }
+  }
+  

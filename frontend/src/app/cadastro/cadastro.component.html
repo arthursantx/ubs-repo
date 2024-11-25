@@ -1,1 +1,162 @@
-<p>cadastro works!</p>
+<p class="text-center mb-4">Cadastro de Paciente</p>
+
+<div class="form-container">
+
+  <div class="form-floating">
+    <input id="nome" class="form-control" type="text" [(ngModel)]="nomeCompleto" />
+    <label for="nome">Nome completo do paciente</label>
+  </div>
+
+  <!-- Nome Social -->
+  <div class="form-floating">
+    <input id="nomeSocial" class="form-control" type="text" [(ngModel)]="nomeSocial" />
+    <label for="nomeSocial">Nome social do paciente</label>
+  </div>
+
+  <!-- Nome da Mãe -->
+  <div class="form-floating">
+    <input id="nomeMae" class="form-control" type="text" [(ngModel)]="nomeMae" />
+    <label for="nomeMae">Nome da mãe</label>
+  </div>
+
+  <!-- Nome do Pai -->
+  <div class="form-floating">
+    <input id="nomePai" class="form-control" type="text" [(ngModel)]="nomePai" />
+    <label for="nomePai">Nome do pai</label>
+  </div>
+
+  <!-- Data de Nascimento -->
+  <div class="form-floating">
+    <input id="dataNascimento" class="form-control" type="date" [(ngModel)]="dataNascimento" />
+    <label for="dataNascimento">Data de nascimento</label>
+  </div>
+
+  <!-- Sexo -->
+  <div class="form-floating">
+    <select id="sexo" class="form-control" [(ngModel)]="sexo">
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="outro">Outro</option>
+    </select>
+    <label for="sexo">Sexo</label>
+  </div>
+
+  <!-- Nacionalidade -->
+  <div class="form-floating">
+    <input id="nacionalidade" class="form-control" type="text" [(ngModel)]="nacionalidade" />
+    <label for="nacionalidade">Nacionalidade</label>
+  </div>
+
+  <!-- Município de Nascimento -->
+  <div class="form-floating">
+    <input id="municipioNascimento" class="form-control" type="text" [(ngModel)]="municipioNascimento" />
+    <label for="municipioNascimento">Município de nascimento</label>
+  </div>
+
+  <!-- Raça/Cor -->
+  <div class="form-floating">
+    <select id="racaCor" class="form-control" [(ngModel)]="racaCor">
+      <option value="branca">Branca</option>
+      <option value="preta">Preta</option>
+      <option value="parda">Parda</option>
+      <option value="amarela">Amarela</option>
+      <option value="indigena">Indígena</option>
+    </select>
+    <label for="racaCor">Raça/Cor</label>
+  </div>
+
+  <!-- Frequenta escola -->
+  <div class="form-floating">
+    <input id="frequentaEscola" class="form-control" type="text" [(ngModel)]="frequentaEscola" />
+    <label for="frequentaEscola">Frequenta escola?</label>
+  </div>
+
+  <!-- Escolaridade -->
+  <div class="form-floating">
+    <input id="escolaridade" class="form-control" type="text" [(ngModel)]="escolaridade" />
+    <label for="escolaridade">Escolaridade</label>
+  </div>
+
+  <!-- Situação Familiar -->
+  <div class="form-floating">
+    <select id="situacaoFamiliar" class="form-control" [(ngModel)]="situacaoFamiliar">
+      <option value="solteiro">Solteiro</option>
+      <option value="casado">Casado</option>
+      <option value="separado">Separado</option>
+      <option value="divorciado">Divorciado</option>
+      <option value="viuvo">Viúvo</option>
+    </select>
+    <label for="situacaoFamiliar">Situação familiar</label>
+  </div>
+
+  <!-- Vinculo -->
+  <div class="form-floating">
+    <input id="vinculo" class="form-control" type="text" [(ngModel)]="vinculo" />
+    <label for="vinculo">Estabelecimento de vínculo</label>
+  </div>
+
+  <!-- Cadastro -->
+  <div class="form-floating">
+    <input id="cadastro" class="form-control" type="text" [(ngModel)]="cadastro" />
+    <label for="cadastro">Estabelecimento de cadastro</label>
+  </div>
+
+  <!-- Deficiência -->
+  <div class="form-floating">
+    <select id="deficiencia" class="form-control" [(ngModel)]="deficiencia">
+      <option value="nenhuma">Nenhuma</option>
+      <option value="visual">Visual</option>
+      <option value="auditiva">Auditiva</option>
+      <option value="motora">Motora</option>
+      <option value="intelectual">Intelectual</option>
+    </select>
+    <label for="deficiencia">Deficiência</label>
+  </div>
+
+  <!-- Contatos -->
+  <div class="form-container">
+    <div class="form-floating">
+      <input id="celular" class="form-control" type="tel" [(ngModel)]="celular" />
+      <label for="celular">Celular</label>
+    </div>
+    <div class="form-floating">
+      <input id="residencial" class="form-control" type="tel" [(ngModel)]="residencial" />
+      <label for="residencial">Telefone Residencial</label>
+    </div>
+    <div class="form-floating">
+      <input id="comercial" class="form-control" type="tel" [(ngModel)]="comercial" />
+      <label for="comercial">Telefone Comercial</label>
+    </div>
+    <div class="form-floating">
+      <input id="contato" class="form-control" type="tel" [(ngModel)]="contato" />
+      <label for="contato">Telefone de Contato</label>
+    </div>
+    <div class="form-floating">
+      <input id="email" class="form-control" type="email" [(ngModel)]="email" />
+      <label for="email">E-mail</label>
+    </div>
+  </div>
+
+  <!-- Endereço -->
+  <div class="form-floating">
+    <input id="enderecoOrigem" class="form-control" type="text" [(ngModel)]="enderecoOrigem" />
+    <label for="enderecoOrigem">Origem do endereço</label>
+  </div>
+  <div class="form-floating">
+    <input id="endereco" class="form-control" type="text" [(ngModel)]="endereco" />
+    <label for="endereco">Dados do endereço</label>
+  </div>
+
+  <!-- CPF -->
+  <div class="form-floating">
+    <input id="cpf" class="form-control" type="text" [(ngModel)]="cpf" />
+    <label for="cpf">CPF</label>
+  </div>
+
+  <div class="form-floating">
+    <input id="identidade" class="form-control" type="text" [(ngModel)]="identidade" />
+    <label for="identidade">Identidade</label>
+  </div>
+
+  <button class="btn btn-primary mt-3" type="submit">Cadastrar</button>
+</div>
