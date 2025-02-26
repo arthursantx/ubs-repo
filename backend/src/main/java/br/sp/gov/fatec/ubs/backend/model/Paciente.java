@@ -16,7 +16,7 @@ public class Paciente {
     @Column(unique=true)
     private String cpf;
 
-    private string nomeSocial;
+    private String nomeSocial;
     private String nomeMae;
     private String dataNascimento;
     private String sexo;
@@ -57,10 +57,10 @@ public class Paciente {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-    public string getNomeSocial() {
+    public String getNomeSocial() {
         return nomeSocial;
     }
-    public void setNomeSocial(string nomeSocial) {
+    public void setNomeSocial(String nomeSocial) {
         this.nomeSocial = nomeSocial;
     }
     public String getNomeMae() {
